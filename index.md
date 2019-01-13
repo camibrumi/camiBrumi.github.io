@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 <a href="https://www.youtube.com/watch?v=A9sOb_r6Hy0">This is a link.</a>
-<a href="01-hhd3/index.html">My first assignment.</a>
+<a href="01-ghd3/index.html">My first assignment.</a>
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
