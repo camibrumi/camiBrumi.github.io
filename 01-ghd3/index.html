@@ -1,10 +1,107 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
 
+<svg id="canvas" width="400px" height="400px"></svg> <!-- Our HTML page contains an SVG element which we will
+                             use as our canvas -->
+
 <script>
+  // http://eyalarubas.com/getting-started-with-d3js.html
   console.log(d3); // test if d3 is loaded
+  var data = [{
+    x: '25%',
+    y: '25%',
+    r: '5%',
+    c: 'red'
+}, {
+    x: '50%',
+    y: '50%',
+    r: '5%',
+    c: 'green'
+}, {
+    x: '75%',
+    y: '75%',
+    r: '5%',
+    c: 'blue'
+}];;
+
+//alert(data[0].x); it works until now
+
   // Add an SVG
+  var canvas = d3.select('#canvas');
   // Add Rectangles
   // Add Circles
+  // We bind our circles data to DOM elements (or SVG shapes in our case).
+  var circles = canvas
+    .selectAll('circle')
+    .data(data);
+
+    // now we have to append the circles to our canvas since they don't exist yet
+    circles
+      .enter()
+      .append('circle')
+      .attr('cx', function(d) { // x coordinate of the circle
+          return d.x;
+      })
+      .attr('cy', function(d) { // y coordinate of the circle
+          return d.y;
+      })
+      .attr('fill', function(d){ // color of the circle
+          return d.c;
+      })
+      .attr('r', function(d) { // radius of the circle
+          return d.r;
+      });
+      //note that d is initialized with the value of the current datum
+
+      // now we make some changes in our data
+      // change coordinates of the first circle:
+      data[0].x = '75%';
+      data[0].y = '50%';
+
+      // add a new circle:
+      data.push({
+        x: '25%',
+        y: '50%',
+        r: '5%',
+        c: 'magenta'
+    });
+
+      //we bind our data with circles again as we did before
+      var circles = canvas
+        .selectAll('circle')
+        .data(data);
+
+        // the below code will only add the new circles but will not update the
+        // existing ones (note that we modified the x coordinate of the first
+        // circle).
+        circles
+          .enter()
+          .append('circle')
+          .attr('cx', function(d) { // x coordinate of the circle
+              return d.x;
+          })
+          .attr('cy', function(d) { // y coordinate of the circle
+              return d.y;
+          })
+          .attr('fill', function(d){ // color of the circle
+              return d.c;
+          })
+          .attr('r', function(d) { // radius of the circle
+              return d.r;
+          });
+
+        // in order to update the attributes of the existing circles (in this
+        //case only the x and y coordinates) we do the following:
+
+        circles
+          .attr('cx', function(d) {
+              return d.x;
+          })
+          .attr('cy', function(d) {
+              return d.y;
+          });
+
+
+
   // Add Lines
   // Add Polygons
   // This is a test to see if the 1st github requirement is all set:)
