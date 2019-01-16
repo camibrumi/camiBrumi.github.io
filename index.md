@@ -1,7 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to my super fancy webpage!
 
-<a href="https://www.youtube.com/watch?v=A9sOb_r6Hy0">This is a link.</a>
-<br>
 <a href="01-ghd3/index.html">My first assignment.</a>
 <br>
 <a href="01-ghd3/README.pdf">The README for the first assignment.</a>
