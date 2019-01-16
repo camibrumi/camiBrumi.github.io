@@ -1,36 +1,30 @@
-## Welcome to GitHub Pages
+## Welcome to my super fancy webpage!
 
-<a href="https://www.youtube.com/watch?v=A9sOb_r6Hy0">This is a link.</a>
-<br>
 <a href="01-ghd3/index.html">My first assignment.</a>
+<br>
+<a href="01-ghd3/README.pdf">The README for the first assignment.</a>
 ### My first assignment.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Description: I have created an interactive animation, which is launched when a button is clicked.
+<br>
+Technical Achievements:
+<ul>
+  <li>I have learned some HTML and JavaScript and I have done my first project in these languages.</li>
+  <li>I have learned how to create shapes (circles, squares, lines, triangles) with d3.js and how to animate them.</li>
+  <li>I added some style to the lines in addition to the usual attributes of the lines.</li>
+  <li>I added animation to the squares, which is launched by the user when he/she clicks the button “CLICK HERE TO SEE SOME MAGIC”. In other words, I have learned how to properly use the method transition().</li>
+  <li>I learned how to add elements to the canvas without using absolute coordinates, but using percentages of the dimensions of the screen.</li>
+</ul>
 
-```markdown
-Syntax highlighted code block
+<br>
+Design Achievements:
+<ul>
+  <li>I have designed how the letters should appear out of some lines lying on the margin of the canvas.</li>
+  <li>I also chose the letters to appear vertically because it is a more dynamic design instead of a static horizontal design.</li>
+</ul>
+<br>
+References:
+<br>
+Main tutorial: http://eyalarubas.com/getting-started-with-d3js.html
+Dashed lines: http://www.d3noob.org/2013/01/making-dashed-line-in-d3js.html
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CamiBrumi/CamiBrumi.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
