@@ -8,6 +8,7 @@
 ### My first assignment.
 
 Description: I have created an interactive animation, which is launched when a button is clicked.
+<br>
 Technical Achievements:
 <ul>
   <li>I have learned some HTML and JavaScript and I have done my first project in these languages.</li>
