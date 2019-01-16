@@ -1,25 +1,61 @@
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<button type="button" onclick="sayDataViz()">CLICK HERE TO SEE SOME MAGIC</button>
 
-<svg id="canvas" width="400px" height="400px"></svg> <!-- Our HTML page contains an SVG element which we will
-                             use as our canvas -->
+<svg id="canvas" width="800px" height="800px">
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="05,30
+            15,10
+            25,30" />
 
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="35,30
+            45,10
+            55,30" />
+
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="65,30
+            75,10
+            85,30" />
+
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="95,30
+            105,10
+            115,30" />
+
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="125,30
+            135,10
+            145,30" />
+
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="155,30
+            165,10
+            175,30" />
+
+  <polygon fill="yellow" stroke="yellow" stroke-width="2"
+    points="185,30
+            195,10
+            205,30" />
+</svg>
 <script>
   // http://eyalarubas.com/getting-started-with-d3js.html
   console.log(d3); // test if d3 is loaded
+
+  // Circles
   var data = [{
     x: '25%',
     y: '25%',
     r: '5%',
     c: 'red'
 }, {
-    x: '50%',
+    x: '25%',
     y: '50%',
-    r: '5%',
+    r: '10%',
     c: 'green'
 }, {
     x: '75%',
     y: '75%',
-    r: '5%',
+    r: '7%',
     c: 'blue'
 }];;
 
@@ -27,7 +63,38 @@
 
   // Add an SVG
   var canvas = d3.select('#canvas');
-  // Add Rectangles
+
+  // add lines
+
+  // DASHED LINE STYLE LEARNED FROM http://www.d3noob.org/2013/01/making-dashed-line-in-d3js.html
+  var line1 = canvas.append("line")
+    .attr("x1", '75%')
+    .attr("y1", '25%')
+    .attr("x2", '90%')
+    .attr("y2", '30%')
+    .attr("stroke-width", '5%')
+    .style("stroke-dasharray", ("3, 3"))
+    .attr("stroke", "purple");
+
+  var line2 = canvas.append("line")
+    .attr("x1", '75%')
+    .attr("y1", '75%')
+    .attr("x2", '85%')
+    .attr("y2", '50%')
+    .attr("stroke-width", '10%')
+    .style("stroke-dasharray", ("3, 5"))
+    .attr("stroke", "cyan");
+
+  var line2 = canvas.append("line")
+    .attr("x1", '75%')
+    .attr("y1", '75%')
+    .attr("x2", '85%')
+    .attr("y2", '50%')
+    .attr("stroke-width", '10%')
+    .style("stroke-dasharray", ("3, 5"))
+    .attr("stroke", "cyan");
+
+
   // Add Circles
   // We bind our circles data to DOM elements (or SVG shapes in our case).
   var circles = canvas
@@ -52,57 +119,459 @@
       });
       //note that d is initialized with the value of the current datum
 
-      // now we make some changes in our data
-      // change coordinates of the first circle:
-      data[0].x = '75%';
-      data[0].y = '50%';
-
-      // add a new circle:
-      data.push({
-        x: '25%',
-        y: '50%',
-        r: '5%',
+      // Add rectangles
+      var data2 = [{
+        x: '5%',
+        y: '5%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '5%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '7%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '7%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '9%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '9%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    }, {
+        x: '5%',
+        y: '11%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    },  {
+        x: '5%',
+        y: '11%',
+        width: '2%',
+        height: '2%',
+        c: 'red'
+    },  {
+        x: '95%',
+        y: '15%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '15%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '15%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '17%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '17%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '19%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '19%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '19%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '21%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '21%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  { //
+        x: '5%',
+        y: '25%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  {
+        x: '5%',
+        y: '25%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  {
+        x: '5%',
+        y: '25%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  {
+        x: '95%',
+        y: '27%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  {
+        x: '95%',
+        y: '29%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  {
+        x: '95%',
+        y: '31%',
+        width: '2%',
+        height: '2%',
+        c: 'blue'
+    },  { // a
+        x: '95%',
+        y: '35%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '35%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '35%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '37%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '37%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '39%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '39%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '39%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '41%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  {
+        x: '95%',
+        y: '41%',
+        width: '2%',
+        height: '2%',
+        c: 'green'
+    },  { // V
+        x: '95%',
+        y: '47%',
+        width: '2%',
+        height: '2%',
         c: 'magenta'
-    });
+    },  {
+        x: '95%',
+        y: '47%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  {
+        x: '95%',
+        y: '49%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  {
+        x: '95%',
+        y: '49%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  {
+        x: '95%',
+        y: '51%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  {
+        x: '95%',
+        y: '51%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  {
+        x: '95%',
+        y: '53%',
+        width: '2%',
+        height: '2%',
+        c: 'magenta'
+    },  { // I
+        x: '5%',
+        y: '57%',
+        width: '2%',
+        height: '2%',
+        c: 'cyan'
+    },  {
+        x: '95%',
+        y: '59%',
+        width: '2%',
+        height: '2%',
+        c: 'cyan'
+    },  {
+        x: '5%',
+        y: '61%',
+        width: '2%',
+        height: '2%',
+        c: 'cyan'
+    },  {
+        x: '95%',
+        y: '63%',
+        width: '2%',
+        height: '2%',
+        c: 'cyan'
+    },  { // Z
+        x: '5%',
+        y: '67%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '67%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '67%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '67%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '69%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '71%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '73%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '73%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '73%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    },  {
+        x: '5%',
+        y: '73%',
+        width: '2%',
+        height: '2%',
+        c: 'brown'
+    }];
+
+    var rectangles = canvas
+      .selectAll('rect')
+      .data(data2);
+
+    rectangles
+      .enter()
+      .append('rect')
+      .attr('x', function(d) { // x coordinate of the circle
+          return d.x;
+      })
+      .attr('y', function(d) { // y coordinate of the circle
+          return d.y;
+      })
+      .attr('width', function(d){
+        return d.width;
+      })
+      .attr('height', function(d){
+        return d.height;
+      })
+      .attr('fill', function(d){ // color of the circle
+          return d.c;
+      });
+
+    /*
+    * This function makes an animation with the already existing rectangles.
+    * It will "write" DATA VIZ on the canvas.
+    */
+    function sayDataViz() {
+      // now we make some changes in our data
+      // change coordinates of the rectangles:
+      // D
+      data2[0].x = '48%';
+      data2[1].x = '50%';
+      data2[2].x = '48%';
+      data2[3].x = '52%';
+      data2[4].x = '48%';
+      data2[5].x = '52%';
+      data2[6].x = '48%';
+      data2[7].x = '50%';
+      // A
+      data2[8].x = '48%';
+      data2[9].x = '50%';
+      data2[10].x = '52%';
+      data2[11].x = '48%';
+      data2[12].x = '52%';
+      data2[13].x = '48%';
+      data2[14].x = '50%';
+      data2[15].x = '52%';
+      data2[16].x = '48%';
+      data2[17].x = '52%';
+      // T
+      data2[18].x = '48%';
+      data2[19].x = '50%';
+      data2[20].x = '52%';
+      data2[21].x = '50%';
+      data2[22].x = '50%';
+      data2[23].x = '50%';
+      // A
+      data2[24].x = '48%';
+      data2[25].x = '50%';
+      data2[26].x = '52%';
+      data2[27].x = '48%';
+      data2[28].x = '52%';
+      data2[29].x = '48%';
+      data2[30].x = '50%';
+      data2[31].x = '52%';
+      data2[32].x = '48%';
+      data2[33].x = '52%';
+      // V
+      data2[34].x = '46%';
+      data2[35].x = '54%';
+      data2[36].x = '46%';
+      data2[37].x = '54%';
+      data2[38].x = '48%';
+      data2[39].x = '52%';
+      data2[40].x = '50%';
+      // I
+      data2[41].x = '50%';
+      data2[42].x = '50%';
+      data2[43].x = '50%';
+      data2[44].x = '50%';
+      // Z
+      data2[45].x = '46%';
+      data2[46].x = '48%';
+      data2[47].x = '50%';
+      data2[48].x = '52%';
+      data2[49].x = '50%';
+      data2[50].x = '48%';
+      data2[51].x = '46%';
+      data2[52].x = '48%';
+      data2[53].x = '50%';
+      data2[54].x = '52%';
 
       //we bind our data with circles again as we did before
-      var circles = canvas
-        .selectAll('circle')
-        .data(data);
+      var rectangles = canvas
+        .selectAll('rect')
+        .data(data2);
 
-        // the below code will only add the new circles but will not update the
-        // existing ones (note that we modified the x coordinate of the first
-        // circle).
-        circles
-          .enter()
-          .append('circle')
-          .attr('cx', function(d) { // x coordinate of the circle
-              return d.x;
-          })
-          .attr('cy', function(d) { // y coordinate of the circle
-              return d.y;
-          })
-          .attr('fill', function(d){ // color of the circle
-              return d.c;
-          })
-          .attr('r', function(d) { // radius of the circle
-              return d.r;
-          });
+      // in order to update the attributes of the existing rectangles (in this
+      //case only the x coordinate) we do the following:
 
-        // in order to update the attributes of the existing circles (in this
-        //case only the x and y coordinates) we do the following:
+      rectangles
+        .transition()
+        .attr('x', function(d) {
+            return d.x;
+        });
 
-        circles
-          .attr('cx', function(d) {
-              return d.x;
-          })
-          .attr('cy', function(d) {
-              return d.y;
-          });
+      // exit() filters the selection only to select elements which are bound
+      // to datums that no longer exist. We remove them from our canvas (and
+      // from the document altogether)
+      rectangles
+        .exit()
+        .remove();
+    }
 
 
 
-  // Add Lines
-  // Add Polygons
-  // This is a test to see if the 1st github requirement is all set:)
+
+
+
+
+   // This is a test to see if the 1st github requirement is all set:)
 </script>
