@@ -25,6 +25,7 @@ Design Achievements:
 </ul>
 <br>
 References:
+<br>
 Main tutorial: http://eyalarubas.com/getting-started-with-d3js.html
 Dashed lines: http://www.d3noob.org/2013/01/making-dashed-line-in-d3js.html
 
