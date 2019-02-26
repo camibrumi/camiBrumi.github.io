@@ -1,5 +1,8 @@
 ## Welcome to my super fancy webpage!
 
+<a href="remix/index.html">My last individual assignment (the remix one!).</a>
+
+
 <a href="01-ghd3/index.html">My first assignment.</a>
 <br>
 <a href="01-ghd3/README.pdf">The README for the first assignment.</a>
@@ -27,4 +30,3 @@ References:
 <br>
 Main tutorial: http://eyalarubas.com/getting-started-with-d3js.html
 Dashed lines: http://www.d3noob.org/2013/01/making-dashed-line-in-d3js.html
-
