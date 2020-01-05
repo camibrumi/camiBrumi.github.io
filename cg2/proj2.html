@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Example File</title>
+
+	<script id="vshader" type="x-shader/x-vertex">
+
+	attribute vec4 vPosition;
+	attribute vec4 vColor;
+	uniform float vPointSize;
+	uniform mat4 projMatrix;
+	uniform mat4 modelMatrix;
+	uniform mat4 viewMatrix;
+	varying vec4 fColor;
+	void main() {
+		gl_Position = projMatrix * viewMatrix * modelMatrix * vPosition;
+    //console.log(gl_position);
+		gl_PointSize = vPointSize;
+		fColor = vColor;
+  	}
+	</script>
+
+	<script id="fshader" type="x-shader/x-fragment">
+	precision mediump float;
+	varying vec4 fColor;
+	void main()
+	{
+		gl_FragColor = fColor;
+  	}
+	</script>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/initShaders.js"></script>
+    <script src="lib/MV.js"></script>
+
+    <script src="proj2.js"></script>
+
+  </head>
+
+  <body onload="main()">
+    <!--This is the input part.-->
+    <div id="page-wrapper">
+
+        <h1 id="header">File Mode</h1>
+        <div id="inputDiv">
+            Select a text file:
+            <input type="file" id="fileInput"/>
+        </div>
+    </div>
+    <canvas id="webgl" width="400" height="400">
+    	Please use a browser that supports the "canvas" tag.
+    </canvas>
+
+  </body>
+</html>

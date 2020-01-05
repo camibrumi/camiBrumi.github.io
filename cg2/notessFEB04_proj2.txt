@@ -1,0 +1,2 @@
+calculate the normals when taking the mesh as an input
+use newell method.
