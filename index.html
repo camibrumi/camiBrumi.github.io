@@ -244,55 +244,53 @@
             <h3 class="mb-0">CS 4731 Computer Graphics</h3>
             <div class="subheading mb-3">Worcester Polytechnic Institute</div>
             <a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-4731" target="_blank">Link to the description of this course.</a>
-            <p>I personally enjoyed two projects from this course. The task in the <a href="https://github.com/camibrumi/megaMobile5000" target="_blank">first one</a> was to model and animate a kinetic sculpture (Alexander Calder's hanging mobiles).
-               To do so, we explored hierarchical modeling of 3D meshes, lighting and shading. We got used to the transformations and hierarchical modeling in WebGL using a
-               matrix stack. The keys that can be used to play with the hanging mobile--I call it MegaMobile5000- are:</p>
+            <p>I personally enjoyed two projects from this course. In the <a href="https://camibrumi.github.io/cg2/proj2.html" target="_blank">first project</a>,
+              the objective was to load a mesh stored in the .ply file format, render it as a 3D wireframe
+              model using Vertex Buffer Objects and also add keyboard control that lets us move the object around.
+            </p>
+            <video autoplay loop muted inline>
+              <source src="video/ant.mov">
+            </video>
+            <video autoplay loop muted inline>
+              <source src="video/scissors.mov">
+            </video>
+            <video autoplay loop muted inline>
+              <source src="video/mug.mov">
+            </video>
+            <video autoplay loop muted inline>
+              <source src="video/shark.mov">
+            </video>
 
-               <ol>
-                 (Before pressing any key, click on the animation below, to select it.)
-                 </br>
-                 'r': to increment the speed
-                 </br>
-                 'e': to decrement the speed
-                 'd': to move the spotlight in the positive X direction
-                 </br>
-                 'a': to move the spotlight in the negative X direction
-                 </br>
-                 'w': to move the spotlight in the positive Y direction
-                 </br>
-                 's': to move the spotlight in the negative Y direction
-                 </br>
-                 'p': Increase spotlight cut off angle (increase cone angle)
-                 </br>
-                 'P': (Upper case 'p') Decrease spotlight cut off angle (decrease cone angle)
-                 </br>
-                 'm': The scene is shaded using Gouraud lighting (smooth shading)
-                 </br>
-                 'M': (Upper case 'm') The scene is shaded using flat shading
-                 </br>
-               </ol>
-               <div class="embed-responsive embed-responsive-16by9">
-                 <iframe class="embed-responsive-item" src="https://camibrumi.github.io/megaMobile5000/shadedSphere1.html" allowfullscreen></iframe>
-               </div>
+            <p> The task in the <a href="https://github.com/camibrumi/megaMobile5000" target="_blank">second project</a> was to model and animate a kinetic sculpture (Alexander Calder's hanging mobiles).
+             To do so, we explored hierarchical modeling of 3D meshes, lighting and shading. We got used to the transformations and hierarchical modeling in WebGL using a
+             matrix stack. The keys that can be used to play with the hanging mobile--I call it MegaMobile5000- are:</p>
 
-
-               <p>In the <a href="https://camibrumi.github.io/cg2/proj2.html" target="_blank">second project</a>,
-                 the objective was to load a mesh stored in the .ply file format, render it as a 3D wireframe
-                 model using Vertex Buffer Objects and also add keyboard control that lets us move the object around.
-               </p>
-               <video autoplay loop muted inline>
-                 <source src="video/ant.mov">
-               </video>
-               <video autoplay loop muted inline>
-                 <source src="video/scissors.mov">
-               </video>
-               <video autoplay loop muted inline>
-                 <source src="video/mug.mov">
-               </video>
-               <video autoplay loop muted inline>
-                 <source src="video/shark.mov">
-               </video>
-
+            <ol>
+              (Before pressing any key, click on the animation below, to select it.)
+              </br>
+              'r': to increment the speed
+              </br>
+              'e': to decrement the speed
+              'd': to move the spotlight in the positive X direction
+              </br>
+              'a': to move the spotlight in the negative X direction
+              </br>
+              'w': to move the spotlight in the positive Y direction
+              </br>
+              's': to move the spotlight in the negative Y direction
+              </br>
+              'p': Increase spotlight cut off angle (increase cone angle)
+              </br>
+              'P': (Upper case 'p') Decrease spotlight cut off angle (decrease cone angle)
+              </br>
+              'm': The scene is shaded using Gouraud lighting (smooth shading)
+              </br>
+              'M': (Upper case 'm') The scene is shaded using flat shading
+              </br>
+            </ol>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://camibrumi.github.io/megaMobile5000/shadedSphere1.html" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
 
@@ -306,7 +304,9 @@
               is to predict the well being of its user as correlated with the day of the week, hour of the day, number of hours slept and as related to the weather (temperature,
               pressure, humidity, etc.) and other variables. The challenge was to fit an inference model into my wearable device with a good balance of speed and accuracy. I’ve
               converged upon a Random Forest implementation which is not as computationally intensive as a deep neural net and could exploit the non-linear nature of the problem.</p>
-            <video src="video/ky.mp4" width="283.33" height="500" controls preload></video>
+            <video autoplay loop muted inline width="283.33" height="500">
+              <source src="video/ky.mp4">
+            </video>
           </div>
         </div>
 
