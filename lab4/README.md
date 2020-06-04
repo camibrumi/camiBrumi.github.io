@@ -18,6 +18,10 @@ I believe that my html was correctly implemented:
 I think I should have used more than one CSS file, one for each html file.
 I believe this is why I could not perfectly center the link items and the image in the index file.
 
+Another think I would have done is that I would have used an absolute URL to an external website to fetch my photo, but
+the assignment indicated to use a relative URL, which means that I can only fetch my image from my repo.
+For security reasons, by uploading images to git, they will still not be displayed if the web page is accessed by using the link [kamibrumi.github.io/lab4/index.html](kamibrumi.github.io/lab4/index.html).
+
 ## Whom I have collaborated or discussed the lab
 ~ No one.
 
