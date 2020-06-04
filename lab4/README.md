@@ -9,7 +9,6 @@ I believe that my html was correctly implemented:
 - I used one CSS file.
 - I didn't use any styling element html and I defined them in the CSS file.
 - I didn't use any styling attribute in elements.
-- I used a relative URL for my image.
 - I didn't use any front-end framework for this lab.
 - I used my own, created-from-scratch CSS file.
 - I used HTML and CSS only for the purposes of this project.
