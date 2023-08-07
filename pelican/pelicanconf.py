@@ -1,6 +1,6 @@
 AUTHOR = 'Brumar, Camelia D.'
 SITENAME = 'cameliabd_'
-SITEURL = ''
+SITEURL = '/page/home.md'
 
 PATH = 'content'
 STATIC_PATHS = ['images', 'pdfs']
